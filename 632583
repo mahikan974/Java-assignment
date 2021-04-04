@@ -1,0 +1,27 @@
+
+package student;
+
+
+public class Student {
+
+  
+  
+    public static void main(String[] args) {
+       StudentClass std = new StudentClass();
+       std.InsertName("soda", 0);
+       std.InsertName("Fatima", 1);
+       std.InsertName("Mahekan", 2);
+       std.InsertName("Sahiba", 3);
+       std.InsertName("sana", 4);
+       std.InsertName("Fariha", 5);
+       std.InsertName("Mahjbeen", 6);
+       std.treverse();
+       String x = std.find("Mahekan");
+       System.out.println(x);
+       std.delete(4);
+      
+      
+       
+    }
+    
+}

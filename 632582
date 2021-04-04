@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package student;
+
+/**
+ *
+ * @author MrBALOCH
+ */
+public class StudentClass {
+   
+    private String[] name =new String[7];
+    
+    void InsertName(String Data, int index){
+        name[index] = Data;
+    }
+    void treverse(){
+        for(int i =0; i<name.length; i++){
+            System.out.println("Name:"+ name[i]);
+        }
+    }   
+    String find(String data){
+        for(int i =0; i<name.length;i++){
+            if(name[i] == data){
+               return "Founded:"+" "+i;
+               
+            }
+            
+        }
+         return "Not Founded";
+    }
+    void delete(int index){
+        for(int i=index; i <name.length; i++){
+            if(i+1 < name.length){
+                name[i]= name[i+1];
+            }
+        }
+        name[name.length -1] = " ";
+    }
+}
+            
+
+        
+    
+    
+        
+    
+            
+            
+            
+            
+            
+            
+
